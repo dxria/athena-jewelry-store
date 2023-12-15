@@ -1,20 +1,17 @@
 import "./css/style.css";
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
-import ShopItems from "./components/ShopItems/ShopItems";
+import SideBar from "./components/SideBar/SideBar.jsx";
 import data from "./data.js"
 
 function App() {
   return (
-    <div className="App">
-       
-      <Header />
-      <Navigation />
-      {/*<SideBar />*/}
-      <ShopItems data={data} />
-      
-      
-    </div>
+      <div className="App">
+
+        <Header />
+        <Navigation />
+        <SideBar data={data} />
+      </div>
   );
 }
 
