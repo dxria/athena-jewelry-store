@@ -7,12 +7,12 @@ library.add(faUser, faShoppingCart)
 function Navigation() {
 
     return (
-        <div >
-            <div className="w-screen py-6 px-5 lg:px-64 flex justify-center space-x-20 md:space-x-40 shadow-md">
+        <nav >
+            <div className="w-screen py-6 px-5 lg:px-64 flex justify-center space-x-20 lg:space-x-40 shadow-md">
                 {/* desktop */}
 
                 <span className='flex items-center text-3xl font-dmserifdisplay font-semibold text-rich-bordeaux'>ATHENA</span>
-                <ul className="hidden md:flex items-center space-x-24">
+                <ul className="hidden lg:flex items-center space-x-24">
                     <li className="font-raleway font-semibold">Home</li>
                     <li className="font-raleway font-semibold">Shop</li>
                     <li className="font-raleway font-semibold">About</li>
@@ -25,7 +25,7 @@ function Navigation() {
 
                 {/* mobile-tab */}
 
-                <button className="space-y-1 group md:hidden">
+                <button className="space-y-1 group lg:hidden">
                     <div className="w-6 h-1 bg-rich-bordeaux"></div>
                     <div className="w-6 h-1 bg-rich-bordeaux"></div>
                     <div className="w-6 h-1 bg-rich-bordeaux"></div>
@@ -44,7 +44,7 @@ function Navigation() {
                 </ul>
                 </button>
             </div>
-        </div>
+        </nav>
     );
 }
 
