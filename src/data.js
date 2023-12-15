@@ -84,3 +84,5 @@ const data = [
         img: 'https://static.e-pandora.ua/21779/responsive-images/1667334277___webp_960_960.webp',       
     }
 ]
+
+export default data;
