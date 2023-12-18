@@ -1,6 +1,12 @@
 import React from "react";
 
-function Categories({ categories, onCategoryChange, activeCategory }) {
+type Categories = {
+    categories: string[],
+    onCategoryChange: (param: string) => void,
+    activeCategory: string,
+}
+
+function SideBar({ categories, onCategoryChange, activeCategory }: Categories) {
   return (
     <div>
       <ul>
@@ -17,4 +23,4 @@ function Categories({ categories, onCategoryChange, activeCategory }) {
   );
 }
 
-export default Categories;
+export default SideBar;
