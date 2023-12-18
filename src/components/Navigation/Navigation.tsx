@@ -1,8 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-library.add(faUser, faShoppingCart)
+// library.add(faUser, faShoppingCart)
 
 function Navigation() {
 
@@ -18,9 +18,9 @@ function Navigation() {
                     <li className="font-raleway font-semibold">About</li>
                     <li className="font-raleway font-semibold">Contact us</li>
                 </ul>
-                <ul className="flex items-center space-x-1">
-                    <li className="font-raleway font-semibold"> <FontAwesomeIcon className='p-1' icon="fa-solid fa-user" /></li>
-                    <li className="font-raleway font-semibold"> <FontAwesomeIcon className='p-1' icon="fa-solid fa-shopping-cart" /></li>
+                <ul className="flex items-center space-x-1">                                            
+                    <li className="font-raleway font-semibold"> <FontAwesomeIcon className='p-1' icon={faUser as IconProp} /></li>
+                    <li className="font-raleway font-semibold"> <FontAwesomeIcon className='p-1' icon={faShoppingCart as IconProp} /></li>
                 </ul>
 
                 {/* mobile-tab */}

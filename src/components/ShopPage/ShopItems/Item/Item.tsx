@@ -1,8 +1,17 @@
-import React from "react";
+type ItemProps = {
+    item: {
+        title: string,
+        description: string,
+        price: number,
+        category: string,
+        img: string
+    }
 
+}
 
-function Items(props) {
+function Items(props: ItemProps) {
     return (
+
         <div className="w-80 m-11 p-6 border-2 border-rich-bordeaux">
             <img alt="item" src={props.item.img} width="100%" className="border-2 border-rich-bordeaux mb-2" />
             <div className="flex justify-between">
@@ -16,3 +25,7 @@ function Items(props) {
 }
 
 export default Items;
+
+
+
+
